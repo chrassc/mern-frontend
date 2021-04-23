@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css';
 
 function Nav() {
   return (
-    <nav>
-      <h1>Navigation</h1>
+    <nav className="NavbarItems">
+      <Link to="/">
+      <h1><strong>한국재난정보</strong></h1>
+      </Link>
       <ul>
         <Link to="/">
           <li>Home</li>
@@ -15,6 +16,9 @@ function Nav() {
         </Link>
         <Link to="/disaster-map">
           <li>Disaster Map</li>
+        </Link>
+        <Link to="/map">
+          <li>Map</li>
         </Link>
       </ul>
     </nav>

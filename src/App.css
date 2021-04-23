@@ -44,11 +44,26 @@
   color: white;
 }
 
-.DisasterList table, th, td {
+.DisasterList table,
+th,
+td {
   border: 1px solid black;
 }
 
 .DisasterMap {
+  background-color: #2c3e50;
+  min-height: 100vh;
+  color: white;
+  text-align: -webkit-center;
+}
+
+.Map {
+  background-color: #2c3e50;
+  min-height: 100vh;
+  color: white;
+}
+
+.MapSearch {
   background-color: #2c3e50;
   min-height: 100vh;
   color: white;
@@ -109,13 +124,23 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: lightskyblue;
+  background: rgb(14, 18, 32);
   color: black;
+}
+.NavbarItems > ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 15px;
+  text-align: center;
+  justify-content: end;
+  margin-right: 2rem;
 }
 
 .leaflet-container {
-  width: 30rem;
+  width: 80%;
   height: 45rem;
+  text-align: -webkit-center;
 }
 
 .hover-info {
@@ -130,8 +155,8 @@ nav {
   border-radius: 5px;
   color: #fff;
   font: 13px/1 sans-serif;
-  box-shadow: 0 0 5px 0 rgba(255,255,255, 0.3);
-  background: rgba(0,0,0,0.8);
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.8);
 }
 .info {
   position: absolute;
@@ -145,8 +170,8 @@ nav {
   border-radius: 5px;
   color: #fff;
   font: 13px/1 sans-serif;
-  box-shadow: 0 0 5px 0 rgba(255,255,255, 0.3);
-  background: rgba(0,0,0,0.8);
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.8);
 }
 .info strong {
   font-size: 14px;
@@ -155,4 +180,47 @@ nav {
 }
 .info span {
   text-align: right;
+}
+
+.css-2b097c-container {
+  width: 20rem;
+  color: black;
+  position: relative;
+  z-index: 2000;
+  align-items: center;
+}
+
+#query {
+  height: 28vh;
+}
+
+.button {
+  display:block;
+  padding:0.7em 2em;
+  border: 0.1em solid #FFFFFF;
+  margin: (0, 0.3em, 0.3em, 0);
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: normal;
+  inline-size: 30vw;
+  text-size-adjust: auto;
+}
+
+button:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
+@media all and (max-width: 30em) {
+  button {
+    display: block;
+    margin: 0.4em auto;
+  }
 }
