@@ -24,11 +24,11 @@ class MapSearch extends Component {
   onSubmit = e => {
     e.preventDefault();
 
-    const search = {
-      date_start: this.state.query.date_start,
-      date_end: this.state.query.date_end,
-      disaster_type: this.state.query.disaster_type,
-    }
+    // const search = {
+    //   date_start: this.state.query.date_start,
+    //   date_end: this.state.query.date_end,
+    //   disaster_type: this.state.query.disaster_type,
+    // }
   }
 
 
